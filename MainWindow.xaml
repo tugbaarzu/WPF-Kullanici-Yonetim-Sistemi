@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="391.379" Width="519.828">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+       
+        <Label Grid.Row="0" FontSize="48" FontWeight="Bold" FontFamily="Tekton Pro Ext" Margin="78,0,0,0">KULLANICI GİRİŞİ</Label>
+        <StackPanel Grid.Row="1" Margin="0,40,0,0">
+
+            <Label  Margin="200,0,198,0" Height="25" FontSize="16" FontFamily="Tekton Pro" >KULLANICI ADI</Label>
+            <TextBox x:Name="kulad" Height="40" Margin="84,0,77,0" RenderTransformOrigin="0.5,0.5"/>
+            <Label  Margin="233,0,198,0" Height="28" FontSize="16" FontFamily="Tekton Pro" >ŞİFRE</Label>
+            <TextBox Name="sifre" Height="40" Margin="84,0,77,0"/>
+            <Button Click="Button_Click_1" Height="34" FontSize="16" FontFamily="Tekton Pro">Yeni Ekle</Button>
+           
+            <Button Click="Button_Click_2" Height="34" FontSize="16" FontFamily="Tekton Pro">GİRİŞ</Button>
+        </StackPanel>
+    </Grid>
+</Window>
